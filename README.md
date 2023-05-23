@@ -32,7 +32,7 @@ Example from bit.ly:
 - A newly created UrlShortener is empty:
     - The size is empty `size(): Int` returns 0
 - There is a method which can be called to shorten an url `shorten(long: String): String`:
-    - The size increases to 1
+    - The size increases by 1
     - The shortened urls should start with https://sho.rt
     - The shortened url should follow the format https://sho.rt/ID, the format of the id is free to choose.
       Hint: think about using an ascending number.
@@ -44,14 +44,14 @@ Example from bit.ly:
 - if given an unknown shortUrl to `unshorten(short : String)` it will throw an Exception
 - If the same url should be shortened more than once it will return the same short url. It should fail with Exception.
 - The id should be of consist of 3 digits with [0-9]. Example: 001, 345, ...
-- The count of _unshortenings_ `unshorteningsFor(shortUrl: String) : Int` of an url should be counted:
+- The count of _unshortenings_ `countUnshortenings(shortUrl: String) : Int` of an url should be counted:
     - When a short url is created the count is 0
     - When a short url is unshortend the count increases by one
     - When the short url given does not exist throw an Exception
 - The id should be random and independent of the given url. (number between `0` and `999`)
   Hint: two instances of the UrlShortener should return different ids for same url.
-- The method `unshorteningsFor(shortUrl: String) : String` should be changed to
-  `unshorteningsFor(url) : String` so that it does not matter if the short url or long url were given.
+- The method `countUnshortenings(shortUrl: String) : int` should be changed to
+  `countUnshortenings(url) : int` so that it does not matter if the short url or long url were given.
   Hint: urls starting with https://sho.rt/ can not be shortened:
     - unknown long urls should throw a RuntimeException
 - The method `shorten(url: String): String` should only accept urls starting with `https://`. If other urls are given, it should throw an Exception.
