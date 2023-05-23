@@ -13,10 +13,10 @@ Example from bit.ly:
 
 ## Hints
 
-- Each main-point or sub-point below should create at least one new test or an addition to an existing test
+- Each main-point or sub-point in the Rules should create at least one new test or be an addition to an existing test
 - Follow them line by line
 - Please do not forget to refactor!
-- Do not implement any other **public** methods than listed above and create them as you need them!
+- Do not implement any other **public** methods than the ones listed below and create them as you need them!
     - `int Size()`
     - `string Shorten(string longUrl)`
     - `string Unshorten(string shortUrl)`
